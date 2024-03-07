@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Category from '../components/Category'
 import FeaturedExtension from '../components/FeaturedExtension'
 import { extensions } from '../data/extensions';
@@ -9,6 +9,7 @@ import FeaturedAd from '../components/FeaturedAd';
 import Post from '../components/Post';
 
 export default function Store() {
+  const [blogs, setBlogs] = useState([1, 2, 3]);
   return (
     <div className='page'>
         <div className="featured"></div>
@@ -42,14 +43,10 @@ export default function Store() {
             })
           }
         </div>
-
+        
+        <h3 style={{textAlign: 'left', marginLeft: '40px'}}>Related Articles 📰</h3>
         <div className="posts">
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
+            {blogs && blogs.map(blog => <Post data={blog} />)}
         </div>
     </div>
   )

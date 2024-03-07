@@ -17,7 +17,7 @@ export default function Ad({data}) {
                 { <FaAd className='icon isAd' style={{color: '#007FFF'}}/>}
                <span>web store</span>
             </div>
-          </div>
+          </div> 
         </div>
     </a>
   )

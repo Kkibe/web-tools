@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss';
 import FeaturedExtension from '../components/FeaturedExtension'
 import Category from '../components/Category'
@@ -13,6 +13,8 @@ import { NavLink } from 'react-router-dom';
 import Post from '../components/Post';
 
 export default function Home() {
+  const [blogs, setBlogs] = useState([1, 2, 3]);
+  
   return (
     <div className='page'>
         <div className="flyer">
@@ -58,11 +60,9 @@ export default function Home() {
           <Faq />
         </div>
         <Newsletter />
-        <h3 style={{textAlign: 'left', marginLeft: '40px'}}>Trending</h3>
+        <h3 style={{textAlign: 'left', marginLeft: '40px'}}>Trending Articles 🔥</h3>
         <div className="posts">
-          <Post />
-          <Post />
-          <Post />
+            {blogs && blogs.map(blog => <Post data={blog} />)}
         </div>
     </div>
   )

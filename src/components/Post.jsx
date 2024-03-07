@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 
-export default function Post() {
+export default function Post({data}) {
   return (
     <div className="post">
         <img src='https://images.unsplash.com/photo-1477865634015-0b232c1dd56a?dpr=1&auto=format&fit=crop&w=1500&h=2109&q=80&cs=tinysrgb&crop='/>
