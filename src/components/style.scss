@@ -21,7 +21,6 @@
     z-index: 10;
     padding: 5px;
     background: #dbd6d644;
-    background-color: transparent;
     border-bottom: 1px solid #cec8c8;
     
     .top{
@@ -76,7 +75,7 @@
             font-size: 18px;
             cursor: pointer;
             margin-right: 10px;
-            color: black;
+            color: var(--black);
             &:hover{
                 color: #535bf2;
             }
@@ -94,12 +93,12 @@
     align-items: space-between;
     padding: 5px;
     margin: 10px;
-    color: black;
+    color: var(--black);
     
     &:hover{
-        background-color: #e9e9e9;
+        background: #e9e9e9;
         cursor: pointer;
-        color: black;
+        color: var(--black);
     }
     img{ 
         flex: 1;
@@ -136,7 +135,7 @@
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
-                    background-color: rgb(30, 152, 30);
+                    background: rgb(30, 152, 30);
                     margin-right: 2px;
                 }
             }
@@ -152,7 +151,7 @@
                     object-fit: fill;
                     object-position: center;
                     border-radius: 50%;
-                    background-color: #ffffd4;
+                    background: #ffffd4;
                     padding: 2px;
                 }
                 span{
@@ -164,7 +163,7 @@
                 
                 .isAd{
                     border-radius: 0;
-                    background-color: transparent;
+                    background: transparent;
                 }
             }
         }
@@ -190,7 +189,7 @@
     flex-direction: column;
     padding: 5px;
     margin: 10px;
-    background-color: transparent;
+    background: transparent;
     border: 1px solid #3c44cf;
     
     img{
@@ -209,9 +208,9 @@
     padding: 5px;
     margin: 10px;
     background: #c2e7ff;
-    color: black;
+    color: var(--black);
     &:hover{
-        background-color: #e9e9e9;
+        background: #e9e9e9;
         cursor: pointer;
     }
 
@@ -220,7 +219,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: #ffffd4;
+        background: #ffffd4;
         padding: 5px;
     }
 
@@ -232,7 +231,7 @@
 	margin: 0 auto;
 	max-width: 1000px;
     .faq {
-        background-color: transparent;
+        background: transparent;
         border: 1px solid #9FA4A8;
         border-radius: 10px;
         padding: 30px;
@@ -254,10 +253,10 @@
         }
     }
     .active {
-        background-color: #fff;
+        background: #fff;
         box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
         &::after, &::before {
-            color: #2ecc71;
+            color: var(--green);
             content: '\f075';
             font-family: 'Font Awesome 5 Free';
             font-size: 7rem;
@@ -286,7 +285,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #e6edf2;
+    background: #e6edf2;
     
     span{
         font-weight: 200;
@@ -332,14 +331,14 @@
             padding: 8px 10px;
             border: none;
             background: #9FA4A8;
-            color: white;
+            color: var(--white);
             cursor: pointer;
     
             font-size: 16px;
             border: 1px solid #9FA4A8;
             &:hover{
-                background: black; 
-                color: white;
+                background: var(--black); 
+                color: var(--white);
             }
         }
     }
@@ -355,8 +354,8 @@
     box-shadow: 1px -1px 1px -1px #b7baff;
     cursor:pointer;
     &:hover{
-        background-color: #e9e9e9;
-        color: black;
+        background: #e9e9e9;
+        color: var(--black);
     }
     img {
         background-position: center;
@@ -387,7 +386,6 @@
             font-weight: 400;
         }
         a{
-            color: #BA3428;
             display: block;
             cursor: pointer;
             margin: 10px;
@@ -461,7 +459,7 @@
         top: 0;
         width: 51%;
         height: 100%;
-        background: #222222;
+        background: var(--black);
         z-index: 1000;
         -webkit-transform: translateX(0);
         /* Chrome, Opera 15+, Safari 3.1+ */
@@ -514,7 +512,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #9FA4A8;
+    background: #9FA4A8;
 
     img{
         width: 55px;
@@ -536,9 +534,9 @@
         height: 50px;
         border-radius: 5px;
         padding: 5px;
-        border: 1px solid #222222;
+        border: 1px solid var(--black);
         cursor: pointer;
-        background-color: #e6edf2;
+        background: #e6edf2;
         display: flex;
         align-items: center;
         justify-content: center;
